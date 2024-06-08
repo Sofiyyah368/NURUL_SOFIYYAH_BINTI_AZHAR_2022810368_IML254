@@ -1,0 +1,879 @@
+body {
+  background-color: #E5CFFC;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
+/*.............content...........*/
+.content-section1 {
+    background-color: #BF82ED;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-section1 p {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+
+/*....................*/
+.contain {
+  text-align: center;
+  padding: 5px;
+  margin: 100px auto;
+  width: 60%;
+}
+
+.contain h2{
+  font-weight: bold;
+  font-size: 40px;
+  padding: 5px;
+}
+
+.contain p{
+  font-weight: normal;
+  font-size: 20px;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+  font-size: 15px;
+}
+
+
+
+
+/*..........header with navigation bar..........*/
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #7338A0;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #0F0529;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #A7BBF2;
+  color: #242A53;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #87A7FF;
+  color: #242A53;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+/*................parallax section.................*/
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#section {
+    background-image: url('image/spider_lily.jpg');}
+#section2 {
+    background-image: url('image/masjidrusila.jpg');}
+#section3 {
+    background-image: url('image/pasti.jpg');}
+#section4 {
+    background-image: url('image/mdi.jpg');}
+#section5 {
+    background-image: url('image/ppyt.jpg');}
+#section6 {
+    background-image: url('image/uitm.jpg');}
+#section7 {
+    background-image: url('image/trg.png');}
+
+.content-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-section p {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+
+
+/*..............imageandtext.........*/
+.container{
+  margin: 100px auto;
+  width: 60%;
+}
+
+img {
+  max-width: 500px;
+  float: left;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.text h2{
+  font-size: 40px;
+  padding: 5px;
+}
+
+text p{
+  font-size: 22px;
+}
+
+
+/*.........gallery no 2 ...........*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+/*.............gallery................*/
+input{
+  display: none;
+}
+
+.ctner {
+  width: 100%;
+  text-align: center;
+
+}
+
+h7 {
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+}
+
+h7::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: crimson;
+  bottom: -10px;
+  left: 50%;
+  transfrom: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    width: 100px;
+  }
+  50%{
+    width: 200px;
+  }
+  100%{
+    width: 100px;
+  }
+}
+
+.top-content {
+  background-color: black;
+  width: 90%;
+  margin: 0 auto 20px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px lightgray;
+}
+
+h8 {
+  height: 100%;
+  background-color: grey;
+  line-height: 60px;
+  padding: 0 50px;
+  color: white;
+}
+
+label {
+  display: inline-block;
+  height: 100%;
+  margin 0 20px;
+  padding: 0 30px;
+  line-height: 60px;
+  font-size: 18px;
+  color: lightgrey;
+  cursor: pointer;
+  transition: color .5s;
+}
+
+label:hover {
+  color: violet;
+}
+
+.photo-gallery {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.pic {
+  position: relative;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px lightgrey;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  border-redius: 10px;
+  transition: .5s;
+}
+
+.pic::before {
+  content: "PHOTO GALLERY";
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  transform: trasnlate(-50%, -50%);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  width: 50%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: .5s;
+  transition-delay: .2s;
+  z-index: 1;
+}
+
+.pic:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  height: 0;
+  background-color: black;
+  transition: .3s;
+}
+
+.pic:hover::after {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.pic:hover::before {
+  margin-top: 0;
+  opacity: 1;
+}
+
+#check1:checked ~ .ctner .photo-gallery .pic {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: .5s;
+}
+
+#check2:checked ~ .ctner .photo-gallery .family {
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+
+#check2:checked ~ .ctner .photo-gallery .friend,
+#check2:checked ~ .ctner .photo-gallery .place {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+
+#check3:checked ~ .ctner .photo-gallery .friend {
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+
+#check3:checked ~ .ctner .photo-gallery .family,
+#check3:checked ~ .ctner .photo-gallery .place {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+
+#check4:checked ~ .ctner .photo-gallery .place {
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+
+#check4:checked ~ .ctner .photo-gallery .family,
+#check4:checked ~ .ctner .photo-gallery .friend {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+
+
+
+
+
+
+
+/*.........countdown.........*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.clock {
+  display: flex;
+}
+
+.clock div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+
+  background: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.clock div span {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.title {
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: x-large;
+  }
+
+  .clock div {
+    width: 70px;
+    height: 70x;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .clock div span {
+    font-size: 25px;
+
+    font-weight: 700;
+  }
+}
+
+
+/*.........tree.......*/
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.tree li {
+  float: left; text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 10px 40px 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+.tree li::before, .tree li::after{
+  content: '';
+  position: absolute; top: 0; right: 50%;
+  border-top: 2px solid #080808;
+  width: 50%; height: 20px;
+}
+
+.tree li::after{
+  right: auto; left: 50%;
+  border-left: 2px solid #080808;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+  display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{
+  padding-top: 0;
+}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+  border: 0 none;
+}
+
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+  border-right: 2px solid #080808;
+  border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after{
+  border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+  content: '';
+  position: absolute; top: 0; left: 50%;
+  border-left: 2px solid #080808;
+  width: 0; height: 20px;
+}
+
+.tree li a{
+  border: 2px solid #080808;
+  padding: 5px 5px;
+  text-decoration: none;
+  color: #666;
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 500px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+  background: #c8e4f8;
+  color: #000;
+  border: 2px solid #94a0b4;
+}
+
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+  border-color:  #94a0b4;
+}
+
+
+
+
+
+
+
+/*............imageexpanding.............*/
+.ctainer {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: violet;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+}
+
+.panel h1 {
+    font-size: 35px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+        transition: opacity 0.3s ease-in 0.4s;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+/*..........up button..........*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.floating-container {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 35px 25px;
+}
+.floating-container:hover {
+  height: 300px;
+}
+.floating-container:hover .floating-button {
+  box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+  -webkit-transform: translatey(5px);
+          transform: translatey(5px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container:hover .element-container .float-element:nth-child(1) {
+  -webkit-animation: come-in 0.4s forwards 0.2s;
+          animation: come-in 0.4s forwards 0.2s;
+}
+.floating-container:hover .element-container .float-element:nth-child(2) {
+  -webkit-animation: come-in 0.4s forwards 0.4s;
+          animation: come-in 0.4s forwards 0.4s;
+}
+.floating-container:hover .element-container .float-element:nth-child(3) {
+  -webkit-animation: come-in 0.4s forwards 0.6s;
+          animation: come-in 0.4s forwards 0.6s;
+}
+.floating-container .floating-button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #9E27C3;
+  bottom: 0;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #0F0529;
+  line-height: 65px;
+  text-align: center;
+  font-size: 23px;
+  z-index: 100;
+  box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+/*............footer..............*/
+.site-footer {
+  background-color:#0F0529;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#9E72C3;
+}
+.site-footer hr {
+  border-top-color:#9E72C3;
+  opacity:0.5
+}
+.site-footer hr.small {
+  margin:20px 0
+}
+.site-footer h6 {
+  color:#9E72C3;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a {
+  color:#9E72C3;
+}
+.footer-links {
+  padding-left:0;
+  list-style:none
+}
+.footer-links li {
+  display:block
+}
+.footer-links a {
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li {
+  display:inline-block
+}
+.site-footer .social-icons {
+  text-align:right
+}
+.site-footer .social-icons a {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text {
+  margin:0
+}
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons {
+    text-align:center
+  }
+}
+
+.social-icons {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li {
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title {
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons.size-sm a {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover {
+  background-color:#3B5998;
+}
+.social-icons a.instagram:hover {
+  background-color: #EA4C89;
+}
+.social-icons a.whatsapp:hover {
+  background-color:#25D366;
+}
+.social-icons a.envelope:hover {
+  background-color:#F2A60C;
+}
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
